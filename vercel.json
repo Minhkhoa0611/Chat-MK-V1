@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "file_transfer_server.js", "use": "@vercel/node" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "file_transfer_server.js" }
+  ]
+}
